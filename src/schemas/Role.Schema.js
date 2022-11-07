@@ -6,6 +6,6 @@ const Role = new mongoose.Schema({
         maxlength: 20,
         required: true,
     }
-});
+}, { versionKey: false });
 
 export default mongoose.model("Role", Role);
