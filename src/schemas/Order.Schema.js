@@ -1,16 +1,15 @@
 import mongoose, { Types } from "mongoose";
 
 const ProductOverview = new mongoose.Schema({
-    product: {
+    user: {
         type: Types.ObjectId,
-        required: true,
-    }, quantity: {
-        type: Number,
+    }, productsOverview: {
+        type: [Types.ObjectId],
         required: true,
     }, total: {
         type: Number,
         required: true,
+    }, date:{
+        type: Date
     }
 }, { versionKey: false });
-
-export default mongoose.model("ProductOverview", ProductOverview);
