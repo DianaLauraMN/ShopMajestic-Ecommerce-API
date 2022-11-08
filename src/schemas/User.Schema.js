@@ -23,7 +23,7 @@ const User = new mongoose.Schema({
         ref: "Role",
         required: true,//<---
     }, lists: {
-        type: Types.ObjectId,
+        type: [Types.ObjectId],
         ref: "List",
     }
 }, { versionKey: false });
