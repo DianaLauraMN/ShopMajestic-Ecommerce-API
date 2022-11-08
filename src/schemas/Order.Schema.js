@@ -13,3 +13,5 @@ const ProductOverview = new mongoose.Schema({
         type: Date
     }
 }, { versionKey: false });
+
+export default mongoose.model("ProductOverview", ProductOverview);
