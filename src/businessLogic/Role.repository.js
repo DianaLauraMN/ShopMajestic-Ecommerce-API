@@ -20,11 +20,11 @@ const getRoleById = async (id) => {
     return role;
 };
 
-const getAllRoles = async (__req, res) => {
+const getAllRoles = async () => {
     const allRoles = await Role.find({});
     return allRoles;
 };
 
 module.exports = {
-    addRole, updateRole, deleteRole, getRoleById,
+    addRole, updateRole, deleteRole, getRoleById, getAllRoles,
 }
