@@ -1,6 +1,6 @@
 import mongoose, { Types } from "mongoose";
 
-const ProductOverview = new mongoose.Schema({
+const Order = new mongoose.Schema({
     user: {
         type: Types.ObjectId,
     }, productsOverview: {
@@ -14,4 +14,4 @@ const ProductOverview = new mongoose.Schema({
     }
 }, { versionKey: false });
 
-export default mongoose.model("ProductOverview", ProductOverview);
+export default mongoose.model("Order", Order);
